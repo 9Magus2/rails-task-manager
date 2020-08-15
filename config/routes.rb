@@ -9,8 +9,8 @@ Rails.application.routes.draw do
   post '/tasks', to: 'tasks#create'
   # #as a user I can edit a task (mark as completed / update title & details)
   # #(display a form and after that update)
-  # get '/tasks/:id/edit', to: 'tasks#edit'
-  # patch '/tasks/:id', to: 'tasks#update'
+  get '/tasks/:id/edit', to: 'tasks#edit', as: :edit
+  patch '/tasks/:id', to: 'tasks#update'
   # #as a user delete a task
   # delete '/tasks/:id', to: 'tasks#destroy'
 
