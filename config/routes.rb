@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   #read/list all tasks
   get '/tasks', to: 'tasks#index'
   #read the details of a task
-  # get '/tasks:id', to: 'tasks#show'
+  get '/tasks:id', to: 'tasks#show'
   # #create a new task(2 steps: as a user see the form and after that create task)
   # get '/tasks/new', to: 'tasks#new'
   # post '/tasks', to: 'tasks#create'
